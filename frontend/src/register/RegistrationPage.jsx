@@ -24,7 +24,7 @@ const RegistrationPage = () => {
       const response = await axios.post('/auth/register/', credentials);
       if (response.data) {
         // Redirige l'utilisateur après une inscription réussie
-        navigate('/login');
+        navigate('/');
       }
     } catch (err) {
       setError('Erreur lors de l inscription, veuillez réessayer.');
